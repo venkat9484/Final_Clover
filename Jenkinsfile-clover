@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("build") {
       steps {
-        sh 'mvn --batch-mode clean org.openclover.clover:setup test org.openclover.clover:aggregate org.openclover.clover:clover'
+        sh 'mvn --batch-mode clean clover:setup test clover:aggregate clover:clover -s mvn-settings.xml'
       }
     }
   }
