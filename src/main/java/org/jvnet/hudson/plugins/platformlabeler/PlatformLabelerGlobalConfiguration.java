@@ -30,7 +30,6 @@ public class PlatformLabelerGlobalConfiguration extends GlobalConfiguration {
         if (nlc != null) {
             nlc.onConfigurationChange();
         }
-        int i = 0;
         return result;
     }
 
